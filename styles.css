@@ -1,4 +1,4 @@
-#gameboard {
+/* #gameboard {
     width: 400px;
     height: 400px;
     display: flex;
@@ -8,18 +8,27 @@
 .piece {
     margin-left: auto;
     margin-right: auto;
-    
+    z-index: 9;
   }
 
 .square {
     height: 50px;
     width: 50px;
+    position: relative;
 }
 
 .square svg {
-    height: 30px;
-    width: 30px;
-    margin: 15px;
+    height: 40px;
+    width: 40px;
+    margin-top: 5px;
+    margin-left: 10px;
+    position: relative;
+    z-index: -9;
+}
+
+path {
+    position: relative;
+    z-index: -10;
 }
 
 .beige {
@@ -36,7 +45,57 @@
 
 .white {
     fill: white;
-}
+} */
+
+
+#gameboard {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .piece {
+    position: relative;
+    z-index: 9; 
+  }
+  
+  .square {
+    height: 50px;
+    width: 50px;
+    position: relative;
+  }
+  
+  .square svg {
+    height: 40px;
+    width: 40px;
+    margin-top: 5px;
+    margin-left: 10px;
+    position: relative; 
+    z-index: -9; 
+  }
+  
+  path {
+    position: relative;
+    z-index: -10;
+  }
+  
+  .beige {
+    background-color: rgb(110, 110, 98);
+  }
+  
+  .brown {
+    background-color: brown;
+  }
+  
+  .black {
+    fill: black;
+  }
+  
+  .white {
+    fill: white;
+  }
+  
 
 
   
